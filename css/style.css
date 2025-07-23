@@ -1,0 +1,471 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #64ffda;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.header-controls button {
+  background: none;
+  border: none;
+  color: #ccd6f6;
+  font-size: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-controls button:hover {
+  color: #64ffda;
+}
+
+
+/* fondo */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-name {
+  font-size: 3rem;
+  color: #64ffda;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: #ccd6f6;
+}
+
+#dynamic-text {
+  color: #00bcd4;
+  font-weight: bold;
+  transition: opacity 0.5s ease;
+}
+
+.scroll-down {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid #64ffda;
+  color: #64ffda;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.scroll-down:hover {
+  background-color: #64ffda;
+  color: #0a192f;
+}
+
+/* Roles */
+
+.roles {
+  padding: 5rem 2rem;
+  background-color: #0a192f;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #64ffda;
+  margin-bottom: 3rem;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.role-card {
+  background-color: #112240;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+}
+
+.role-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+
+.role-card h3 {
+  color: #ccd6f6;
+  margin-bottom: 0.5rem;
+}
+
+.role-card p {
+  color: #8892b0;
+  font-size: 0.95rem;
+}
+
+/* logos */
+
+.skills {
+  padding: 5rem 2rem;
+  background-color: #0a192f;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.skill-icon img {
+  width: 60px;
+  filter: grayscale(100%) brightness(0.8);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.skill-icon img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+/* Certificados */
+
+.certificates {
+  padding: 5rem 2rem;
+  background-color: #0a192f;
+  text-align: center;
+}
+
+.certificates .section-title {
+  font-size: 2rem;
+  color: #64ffda;
+  margin-bottom: 3rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  background-color: #112240;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ccd6f6;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(100, 255, 218, 0.1);
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.cert-card p {
+  font-size: 0.9rem;
+  color: #8892b0;
+}
+
+/* Contacto */
+.contacto {
+  padding: 5rem 2rem;
+  background-color: #0a192f;
+  text-align: center;
+}
+
+.contacto .section-title {
+  font-size: 2rem;
+  color: #64ffda;
+  margin-bottom: 2rem;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  color: #8892b0;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact-icons img {
+  width: 35px;
+  filter: grayscale(100%) brightness(0.7);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.contact-icons img:hover {
+  filter: none;
+  transform: scale(1.15);
+}
+
+/* foter*/
+.footer {
+  padding: 2rem;
+  background-color: #112240;
+  color: #8892b0;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.btn-top {
+  margin: 1rem auto 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btn-top img {
+  width: 100%;
+  filter: grayscale(100%) brightness(0.8);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.btn-top img:hover {
+  filter: none;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+/* 📱 Media Queries: adaptaciones para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .scroll-down {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 1rem;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-icons img {
+    width: 28px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .btn-contacto {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .footer {
+    font-size: 0.6rem
+  }
+
+  .btn-top {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+/* modo claro-oscuro */
+
+/* 🌙 Modo oscuro (por defecto) */
+body {
+  background-color: #0a192f;
+  color: #ccd6f6;
+}
+
+/* iconos modo oscuro */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modo-oscuro img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: grayscale(100%) brightness(0.7);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.modo-oscuro img:hover {
+  filter: none;
+  transform: scale(1.15);
+}
+
+
+
+/* ☀️ Modo claro limpio y ordenado */
+body.dark-mode {
+  background-color: #f5f7fa;
+  color: #0a192f;
+}
+
+/* Títulos principales */
+body.dark-mode .section-title,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #0a192f;
+}
+
+/* Párrafos y textos suaves */
+body.dark-mode p,
+body.dark-mode .contact-text {
+  color: #495057;
+}
+
+/* Tarjetas y secciones */
+body.dark-mode .role-card,
+body.dark-mode .cert-card {
+  background-color: #ffffff;
+  color: #0a192f;
+}
+
+body.dark-mode .roles,
+body.dark-mode .skills,
+body.dark-mode .certificates,
+body.dark-mode .contacto,
+body.dark-mode .footer {
+  background-color: #f5f7fa;
+}
+
+/* Botones y efectos */
+body.dark-mode .scroll-down,
+body.dark-mode .btn-contacto,
+body.dark-mode .btn-top {
+  border-color: #0a192f;
+  color: #0a192f;
+}
+
+body.dark-mode .scroll-down:hover,
+body.dark-mode .btn-contacto:hover {
+  background-color: #00bcd4;
+  color: #ffffff;
+}
+
+/* Imágenes e íconos */
+body.dark-mode .skill-icon img,
+body.dark-mode .contact-icons img {
+  filter: grayscale(100%) brightness(0.5);
+}
+
+body.dark-mode .skill-icon img:hover,
+body.dark-mode .contact-icons img:hover {
+  filter: none;
+}
+
+.btn-top img {
+  width: 100%;
+  filter: grayscale(100%) brightness(0.8);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.btn-top img:hover {
+  filter: none;
+  transform: translateY(-8px);
+}

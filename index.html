@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christiam Salcedo | Portafolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/iconos/favicon.ico" />
+</head>
+<body>
+<!-- 🌐 Encabezado -->
+<header class="main-header">
+  <div class="logo" onclick="scrollToTop()">&lt;CS/&gt;</div>
+  <div class="header-controls">
+    <div class="modo-oscuro" onclick="toggleDarkMode()">
+      <img id="tema-icono" src="iconos/sun.png" alt="Cambiar tema" />
+    </div>
+    <button id="toggle-language" onclick="cambiarIdioma()" title="Cambiar idioma">EN</button>
+  </div>
+</header>
+
+<!-- 🧑‍🎨 Hero -->
+<section class="hero" id="inicio">
+  <h1 class="hero-name" data-es="Christiam Salcedo" data-en="Christiam Salcedo">Christiam Salcedo</h1>
+<p class="hero-description">
+ <span data-es="Soy un analista con aires de diseñador y" data-en="I'm an analyst with a designer's flair and">
+  Soy un analista con aires de diseñador y
+</span>
+  <span id="dynamic-text">amante del vino</span>.
+</p>
+  <button class="scroll-down" onclick="scrollToNextSection()" data-es="Ver más ↓" data-en="See more ↓">Ver más ↓</button>
+</section>
+
+
+
+<!-- 💼 Roles -->
+<section class="roles" id="roles">
+  <h2 class="section-title" data-es="¿Qué puedo hacer?" data-en="What can I do?">¿Qué puedo hacer?</h2>
+  <div class="roles-grid">
+    <div class="role-card">
+      <span class="role-icon">💻</span>
+      <h3 data-es="Desarrollador" data-en="Developer">Desarrollador</h3>
+      <p data-es="Creo sitios web interactivos y responsivos con HTML, CSS y JavaScript."
+         data-en="I build interactive and responsive websites using HTML, CSS, and JavaScript.">
+         Creo sitios web interactivos y responsivos con HTML, CSS y JavaScript.
+      </p>
+    </div>
+    <div class="role-card">
+      <span class="role-icon">📈</span>
+      <h3 data-es="Analista" data-en="Analyst">Analista</h3>
+      <p data-es="Interpreto datos, estructuras lógicas y resuelvo problemas técnicos."
+         data-en="I analyze data, logical structures, and solve technical problems.">
+         Interpreto datos, estructuras lógicas y resuelvo problemas técnicos.
+      </p>
+    </div>
+    <div class="role-card">
+      <span class="role-icon">🧪</span>
+      <h3 data-es="Tester QA" data-en="QA Tester">Tester QA</h3>
+      <p data-es="Verifico calidad, realizo pruebas funcionales y analizo requerimientos."
+         data-en="I ensure quality, perform functional testing, and review requirements.">
+         Verifico calidad, realizo pruebas funcionales y analizo requerimientos.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Hablididades  -->
+<section class="skills" id="habilidades">
+  <h2 class="section-title" data-es="Tecnologías que utilizo" data-en="Technologies I use">Tecnologías que utilizo</h2>
+  <div class="skills-grid">
+    <div class="skill-icon">
+      <img src="iconos/html5.svg" alt="HTML5" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/css3.svg" alt="CSS3" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/javascript.svg" alt="JavaScript" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/python.svg" alt="Python" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/vscode.svg" alt="Visual Studio Code" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/sqlserver.svg" alt="SQL Server" />
+    </div>
+  </div>
+</section>
+
+<!-- Certificados -->
+<section class="certificates" id="certificados">
+  <h2 class="section-title" data-es="Certificados" data-en="Certificates">Certificados</h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <img src="certificados/seprogramar.jpeg" alt="Se Programar" />
+      <h3 data-es="#SeProgramar – Argentina Programa" data-en="#SeProgramar – Argentina Programa">#SeProgramar – Argentina Programa</h3>
+      <p data-es="INTI • Abril 2023" data-en="INTI • April 2023">INTI • Abril 2023</p>
+    </div>
+    <div class="cert-card">
+      <img src="certificados/codoacodo.png" alt="Testing QA" />
+      <h3 data-es="Codo a Codo 4.0 – Testing QA & Automatización" data-en="Codo a Codo 4.0 – QA Testing & Automation">Codo a Codo 4.0 – Testing QA & Automatización</h3>
+      <p data-es="Agencia de Habilidades • 198 hs" data-en="Skills Agency • 198 hrs">Agencia de Habilidades • 198 hs</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto  -->
+<section class="contacto" id="contacto">
+  <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+  <p class="contact-text" data-es="¿Querés charlar sobre diseño, desarrollo o alguna idea que tenés en mente? Estoy a un clic de distancia."
+     data-en="Want to talk about design, development or a wild idea on your mind? I'm just one click away.">
+    ¿Querés charlar sobre diseño, desarrollo o alguna idea loca que tenés en mente? Estoy a un clic de distancia.
+  </p>
+  <div class="contact-icons">
+    <a href="mailto:salcedochristian04@gmail.com" target="_blank">
+      <img src="iconos/gmail.png" alt="Gmail" />
+    </a>
+    <a href="https://wa.me/5491126850714" target="_blank">
+      <img src="iconos/whatsapp.png" alt="WhatsApp" />
+    </a>
+    <a href="https://github.com/ChristiamSalcedo" target="_blank">
+      <img src="iconos/github.png" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/christiam-salcedo" target="_blank">
+      <img src="iconos/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://www.instagram.com/salcedo_04/" target="_blank">
+      <img src="iconos/instagram.png" alt="Instagram" />
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+ <footer class="footer">
+  <div class="btn-top" onclick="scrollToTop()">
+    <img src="iconos/cohete.png" alt="Volver arriba" />
+  </div>
+  <p data-es="Diseñado por Christiam Salcedo — © 2025" data-en="Designed by Christiam Salcedo — © 2025">
+    Diseñado por Christiam Salcedo — © 2025
+  </p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
