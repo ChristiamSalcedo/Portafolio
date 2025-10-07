@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christiam Salcedo | Portafolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/iconos/favicon.ico" />
+</head>
+<body>
+  <!-- 🌐 Encabezado -->
+<header class="main-header">
+  <div class="logo" onclick="scrollToTop()">&lt;CS/&gt;</div>
+  <div class="header-controls">
+    <div class="modo-oscuro" onclick="toggleDarkMode()">
+      <img id="tema-icono" src="iconos/sun.png" alt="Cambiar tema" />
+    </div>
+    <button id="toggle-language" onclick="window.location.href='index-en.html'" title="Cambiar a inglés">EN</button>
+  </div>
+</header>
+
+    <!-- fondo -->
+  <section class="hero" id="inicio">
+  <h1 class="hero-name">Christiam Salcedo</h1>
+  <p class="hero-description">
+    Soy un analista con aires de diseñador y <span id="dynamic-text">amante del vino</span>.
+  </p>
+  <button class="scroll-down" onclick="scrollToNextSection()">Ver más ↓</button>
+</section>
+
+  <!-- roles -->
+   <section class="roles" id="roles">
+  <h2 class="section-title">¿Qué puedo hacer?</h2>
+  <div class="roles-grid">
+    <div class="role-card">
+      <span class="role-icon">💻</span>
+      <h3>Desarrollador</h3>
+      <p>Creo sitios web interactivos y responsivos con HTML, CSS y JavaScript.</p>
+    </div>
+    <div class="role-card">
+      <span class="role-icon">📈</span>
+      <h3>Analista</h3>
+      <p>Interpreto datos, estructuras lógicas y resuelvo problemas técnicos.</p>
+    </div>
+    <div class="role-card">
+      <span class="role-icon">🧪</span>
+      <h3>Tester QA</h3>
+      <p>Verifico calidad, realizo pruebas funcionales y analizo requerimientos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Habilidades -->
+
+ <section class="skills" id="habilidades">
+  <h2 class="section-title">Tecnologías que utilizo</h2>
+  <div class="skills-grid">
+    <div class="skill-icon">
+      <img src="iconos/html5.svg" alt="HTML5" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/css3.svg" alt="CSS3" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/javascript.svg" alt="JavaScript" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/python.svg" alt="Python" />
+    </div>
+    <div class="skill-icon">
+      <img src="iconos/vscode.svg" alt="Visual Studio Code" />
+    </div>
+        <div class="skill-icon">
+      <img src="iconos/sqlserver.svg" alt="SQL Server" />
+    </div>
+    <!-- Agregá Illustrator y Photoshop si querés -->
+
+  </div>
+</section>
+
+<!-- Certificados -->
+
+<section class="certificates" id="certificados">
+  <h2 class="section-title">Certificados</h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <img src="certificados/seprogramar.jpeg" alt="Se Programar" />
+      <h3>#SeProgramar – Argentina Programa</h3>
+      <p>INTI • Abril 2023</p>
+    </div>
+    <div class="cert-card">
+      <img src="certificados/codoacodo.png" alt="Testing QA" />
+      <h3>Codo a Codo 4.0 – Testing QA & Automatización</h3>
+      <p>Agencia de Habilidades • 198 hs</p>
+    </div>
+    <!-- Si tenés más, agregamos después -->
+  </div>
+</section>
+
+    <!-- Contacto -->
+<section class="contacto" id="contacto">
+  <h2 class="section-title">Contacto</h2>
+  <p class="contact-text">
+    ¿Querés charlar sobre diseño, desarrollo o alguna idea loca que tenés en mente? Estoy a un clic de distancia.
+  </p>
+  <div class="contact-icons">
+    <a href="mailto:salcedochristian04@gmail.com" target="_blank">
+      <img src="iconos/gmail.png" alt="Gmail" />
+    </a>
+    <a href="https://wa.me/5491126850714" target="_blank">
+      <img src="iconos/whatsapp.png" alt="WhatsApp" />
+    </a>
+    <a href="https://github.com/ChristiamSalcedo" target="_blank">
+      <img src="iconos/github.png" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/christiam-salcedo" target="_blank">
+     <img src="iconos/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://www.instagram.com/salcedo_04/" target="_blank">
+      <img src="iconos/instagram.png" alt="Instagram" />
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="btn-top" onclick="scrollToTop()">
+    <img src="iconos/cohete.png" alt="Volver arriba" />
+  </div>
+  <p>Diseñado  por Christiam Salcedo — &copy; 2025</p>
+</footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+src="iconos/sun.png" alt="Cambiar tema" />
